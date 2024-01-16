@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Chiều dài");
+        let b = +prompt("Chiều rộng");
+        let square;
+        square = parseFloat(square);
+        let resull ;
+
+        if(isNaN(a) || isNaN(b)){
+            console.log("Không hợp lệ");
+        }else{
+            if( a > b){
+                square = b;
+            }else{
+                square = a;
+            }
+        }
+        resull = (a*b)/square**2;
+        resull = parseInt(resull);
+        console.log("Số hình vuông tối thiểu có thể cắt được là:"+ resull );
+        console.log("và kích cỡ của mỗi hình vuông là:" + square**2);
+    </script>
+</body>
+</html>

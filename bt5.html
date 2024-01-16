@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1, 2.5, "hello", "how", 3, 4.7, "hi", 5];
+        console.log("Mảng ban đầu:");
+        console.log(arr);
+        let start = 0;
+        let end = arr.length - 1;
+        while (start < end) {
+        let temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+        }
+        console.log("Mảng sau khi đảo ngược:");
+        console.log(arr);
+    </script>
+</body>
+</html>
