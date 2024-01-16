@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [5, 85, 65, 15, 5, 52, 15, 25, 5, 15, 65];
+        console.log("Các phần tử xuất hiện từ 2 lần trở lên là: ");
+        for (let i = 0; i < a.length; i++) {
+        let dem = 0;
+        for (let  j = 0; j <= i; j++) {
+            if (a[j] == a[i]) {
+            dem++;
+            }
+        }
+        if (dem == 2) {
+            console.log(a[i]);
+        }
+        }
+    </script>
+</body>
+</html>
